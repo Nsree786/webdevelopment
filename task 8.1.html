@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(background\ .jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+header {
+    background-color:  #226b6f;
+    color: white;
+    text-align: left;
+    padding: 5px 0;
+    font-size: 20px;
+}
+header img{
+    width: 5%;
+    height: 4p0x;
+    float: left;
+    margin-bottom: 4%;
+}
+.container {
+    display: flex;
+    margin: 10px;
+    gap: 100px;
+}
+.title {
+    flex: 4;
+    display: grid;
+    grid-template-columns: 4fr;
+    gap: 20px;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card h2 {
+    padding: .85rem 1.30rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: #226b6f;
+    color: lightblue;
+    border-bottom: 1px solid white;
+}
+.card h2 span {
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 15px 0;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.content img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+.content p{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.read-more {
+    font-weight: bold;
+    color:  #226b6f;
+    margin-left: 25%;
+    margin-bottom: 4%;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.review-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color:  #226b6f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.review-btn:hover {
+    background-color:  #226b6f;
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 30px;
+    background-color:lightgray;
+}
+.sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 4%;
+    margin-right: 2%;
+}
+.about{
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+
+}
+
+.about h3{
+    background-color: #226b6f;
+    color: lightblue;
+    padding: 11px;
+    font-size: 20px;
+    margin-top: 0;
+
+}
+.about p{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.newsletter,.about{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.newsletter input {
+    width: 300px;
+    padding: 5px;
+    margin-top: 5px;
+}
+.newsletter h3{
+    background-color: #226b6f;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 0;
+
+}
+
+.newsletter button {
+    width: 100px;
+    padding: 10px;
+    background: blue;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-bottom: 5%;
+    margin-left: 30%;
+}
+.bottom{
+    background-color: #226b6f;
+    color: white;
+    justify-content: center;
+    padding: 5px 0;
+    font-size: 20px;
+}
+.Tags{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.Tags h3{
+    background-color: #226b6f;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 0;
+}
+footer{
+    background-color: #226b6f;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1><img src="title img.jpg" >Sammy's MindChirps</h1>
+    </header>
+    <div class="container">
+        <main class="title" style="margin-left:20%; margin-top: 4%;">
+    <div class="card">
+        <h2>Book review of <span>Think Faster Talk Smarter By Matt Abrahams</span></h2>
+        <div class="content">
+            <img src="https://www.mindchirps.com/images/blog/thumbnail/1729135090671081f2de1bb" alt="Think Faster Talk Smarter Book Cover">
+            <p>
+                Think Faster Talk Smarter is a book written by Matt Abrahams, an expert in communication and a Stanford University professor, who teaches organizational behaviour. 
+                Communication is the lifeline of any relationship - be it personal or professional. 
+                Interestingly, while our educational system prepares us for communication in a formal setting - such as delivering a presentation, writing clear emails, rehearsed conversations, etc., 
+                it doesn’t coach us for speaking in an informal setting...
+            </p>
+        </div>
+        <a href="#" class="read-more">[Continue Reading...]</a>
+        <div class="footer">
+            <button class="book-reviews-btn" >Book Reviews</button>
+          </div>
+    </div>
+
+    <div class="card">
+        <h2>Book review of <span>Review of the movie Lover directed by Prabhuram Vyas</span></h2>
+        <div class="content">
+            <img src="1713356440661fbe983c182.jpeg" alt="Think Faster Talk Smarter Book Cover">
+            <p>
+                Love is an emotion that has always intrigued me. It is loaded with lot of contrarian feelings- you need the person you love to be possessive about you yet need your space; you need that person to respect your thoughts and let you do things on your course yet you want that person to offer their unsolicited views, and I could go on and on about how this universal feeling called "LOVE" is so unfathomable. Perhaps, this is why, no matter how many movies are done around the central theme of love, new ones with fresh perspective like "Lover" still is celebrated by the audience.
+            </p>
+        </div>
+        <a href="#" class="read-more">[Continue Reading...]</a>
+        <div class="footer">
+            <button class="book-reviews-btn" >Book Reviews</button>
+          </div>
+    </div>
+
+    <div class="card">
+        <h2>Book review of <span>Review of the Tamil movie Por Thozhil directed by vignesh Raja</span></h2>
+        <div class="content">
+            <img src="1687491000649511b80d560.jpeg" alt="Think Faster Talk Smarter Book Cover">
+            <p>
+                Vignesh Raja's debut movie Por Thozhil revolves around the story where 2 cops are on a mission to hunt down a serial killer.  This is a stereotypical theme, which Kollywood audience are used to from the days of Sigappu Rojakkal but the director has navigated through the plot with rich twists and tight screenplay, maintaining the suspense all through the movie.
+            </p>
+        </div>
+        <a href="#" class="read-more">[Continue Reading...]</a>
+        <div class="footer">
+            <button class="book-reviews-btn" >Book Reviews</button>
+          </div>
+    </div>
+
+   
+    <div class="card">
+        <h2>Book review of <span>Review of the movie Archana 31 Not out by Akhil Anil Kumar</span></h2>
+        <div class="content">
+            <img src="167749710463fc93101d8c5.jpeg" alt="Think Faster Talk Smarter Book Cover">
+            <p>
+                'Woman+ Unmarried+ Approaching one's 30s' is a perfect combination that would invite unabated sympathies and advise from one's friends(married) and family. Archana 31 Not Out portrays the life of one such woman, Archana(played by Aishwarya Lekshmi), who struggles to find the right groom for her. And when she eventually thinks she has found one, a twist awaits her..
+            </p>
+        </div>
+        <a href="#" class="read-more">[Continue Reading...]</a>
+        <div class="footer">
+            <button class="book-reviews-btn" >Book Reviews</button>
+          </div>
+    </div>
+
+    <div class="card">
+        <h2>Book review of <span>Think Faster Talk Smarter By Matt Abrahams</span></h2>
+        <div class="content">
+            <img src="167670246763f07303cb305.jpeg" alt="Think Faster Talk Smarter Book Cover">
+            <p>
+                None likes facing crisis in life but we all know that it is inevitable though it's form and severity may vary. Some crisis could impact self while some like Covid 19 could impact people at large. Darwin's theory of evolution talks about survival of the fittest, which emphasizes on the adaptablity to the adverse situations as a quintessential quality to live to see another day. This theory is very much and all the more relevant in present scenario given the VUCA (volatile, uncertain, complex and ambiguous) nature of the world. But what are the essential qualities, you may wonder. Thanks to the authors T N Hari and Sanjay Swami...
+            </p>
+        </div>
+        <a href="#" class="read-more">[Continue Reading...]</a>
+        <div class="footer">
+            <button class="book-reviews-btn" >Book Reviews</button>
+          </div>
+    </div>
+
+    <div class="card">
+        <h2>Book review of <span>Gautam Vasudev Menon and Relationships- An analysis of Vinnaithandi Varuvaya</span></h2>
+        <div class="content">
+            <img src="https://www.mindchirps.com/images/blog/thumbnail/167392318963c60a75e19f8" alt="Think Faster Talk Smarter Book Cover">
+            <p>
+                Take any relationship- be it between a parent and one's kids, that with one's friends, or colleagues etc., Any contact between two humans has got lot of intricacies and nuances. But nothing can beat the complexity more than a relationship that blossoms between a man and a woman who intends to share their life with each other
+            </p>
+        </div>
+        <a href="#" class="read-more">[Continue Reading...]</a>
+        <div class="footer">
+            <button class="book-reviews-btn" >Book Reviews</button>
+          </div>
+    </div>
+
+    <div class="card">
+        <h2>Book review of <span>Review of the Tamil movie Nitham Oru Vanam by Ra Karthik</span></h2>
+        <div class="content">
+            <img src="https://www.mindchirps.com/images/blog/thumbnail/16689287426379d4e6af198" alt="Think Faster Talk Smarter Book Cover">
+            <p>
+                The movie's storyline is very straight forward: How travel can change one's outlook about life. Of late, in Kollywood cinema, this pattern can be seen where there is a depressed person(men, mostly) who would climb on their Royal Enfield bike and then set off to the Himalayan mountains; when they return, they become a refined soul. So, is this movie any different from the stereotypical portrayal?! Ah, you can't get to the verdict right in the first paragraph :D
+            </p>
+        </div>
+        <a href="#" class="read-more">[Continue Reading...]</a>
+        <div class="footer">
+            <button class="book-reviews-btn" >Book Reviews</button>
+          </div>
+    </div>
+
+    <div class="card">
+        <h2>Book review of <span>Review of Row your Boat - 50 Simple Little Things to Navigate the Modern Indian Marriage by Sophia Philips and Roopak Nedumpillynai</span></h2>
+        <div class="content">
+            <img src="https://www.mindchirps.com/images/blog/thumbnail/16683439266370e8768b13b" alt="Think Faster Talk Smarter Book Cover">
+            <p>
+                It's a common saying which goes like 'Marriages are made in Heaven'; but we all know that the couple should still lead their lives on (beautiful yet complicated) Earth!! All of us want and yearn for a happy, peaceful, fun filled and satisfying married life and a partner who would support, defend, and handhold us in this journey. But very rarely do we come across couples who have achieved this stature. This book 'Row, Row, Row your Boat' is a book written by couple therapists, Sophia and Roopak(a couple themselves!!), who turned around their married life which was on the verge of collapse with therapy's help. This is a short but insightful read on little things that couples could do 'together' to reach their vision of becoming a made-for-each-other couple, which apparently was their original vow when they got married but may have fizzled out as years passed by.&nbsp;
+            </p>
+        </div>
+        <a href="#" class="read-more">[Continue Reading...]</a>
+        <div class="footer">
+            <button class="book-reviews-btn" >Book Reviews</button>
+          </div>
+    </div>
+    </main>
+    <aside class="sidebar">
+        <div class="newsletter">
+            <h3>Newsletter</h3>
+            <input type="email" placeholder="Email Address"><br>
+            <button >Subscribe</button>
+        </div>
+        <div class="about">
+            <h3>About Sammy's MindChirps</h3>
+            <p>
+                Hello! Welcome to Sammy's MindChirps. I'm glad you are here. To me, the word LIFE is an acronym of Laboratory with Infinite Freedom to Experiment. It's more like a kaleidoscope offering amazing learning opportunities as we grow and explore various facets of life. So this blog is a platform where I share anything that I find interesting (with my two cents, of course :D). I assure that you will have some new learning when you exit the blog. And do share your feeback on the blog or anything you want me to write about in this blog by dropping an email to mindchirps@gmail.com
+            </p>
+        </div>
+        <div class="Tags">
+            <h3>Tag's</h3>
+            <ul>
+                <li>Technology</li>
+                  <li>Crime</li>
+                  <li>Yoga</li>
+                   <li>Web Designing</li>
+                   <li>Animals</li>
+                    <li>Romance</li>
+                    <li>Book Reviews</li>
+                    <li>Self-Help Book</li>
+                    <li>Drama</li>
+                    <li>Psychology</li>
+            </ul>
+        </div>
+    </aside>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+ <footer>
+    <i class="fa fa-facebook"></i>            <i class="fa fa-twitter"></i>           <i class="fa fa-instagram"></i>          <i class="fa fa-google"></i>
+    <h2>© All rights reserved by Sammy's MindChirps</h2>
+    <p>Logo credits: Ms.N.S.Lalitha Sree<br>
+    </p>
+</footer>
+</body>
+</html>
